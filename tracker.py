@@ -15,7 +15,6 @@ name = input("What's your name? ")
 print(f"Welcome, {name}! Let's log two expenses.\n\n")
 expense1 = str(input("First expense? "))
 amount1 = float(input("Amount? "))
-
 if amount1 > 200:
     print("  Huge expense - are you sure?")
 elif amount1 > 100:
@@ -24,11 +23,9 @@ elif amount1 > 50:
     print("  Moderate expense.")
 else:
     print("  Small expense.")
-
 subtotal = amount1
 expense2 = str(input("Second expense? "))
 amount2 = float(input("Amount? "))
-
 if amount2 > 200:
     print("  Huge expense - are you sure?")
 elif amount2 > 100:
@@ -40,7 +37,6 @@ else:
 
 if amount1 > 100 and amount2 > 100:
     print("  Two big expenses in a row - slow down!")
-
 subtotal += amount2
 average = (amount1 + amount2) / 2
 tax_percent = int(input("Tax rate %? "))
